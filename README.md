@@ -1,32 +1,43 @@
+<h1 align="center">
+  Drag Widgets 🔥
+</h1>
 
-drag and drop any widget 
-Before starting ✋. I want to tell you that every star 🌟 added to my space shines my world and motivate me 💪 to make more awesome things like this one so please don't forget to give me a star and like the project.
+<h2 align="center"> Drag Widgets allows you to create a draggable list of widgets, giving you the capability to drag and drop your list anywhere on the screen</h2>
 
-<h1 align="center">Drag Widgets</h1>
-
-## Features
-
-at now you can drag any widget,image, or Icon to any pixel in screen
+<p align="center">Show some ❤️ and <a href="https://github.com/abdalla3yash/drag_widgets">star the repo</a> to support the project!</p>
 
 ## Getting started
+Follow these steps to use this package
 
-Add Drag Widget to your pubspec.yaml file:
+
+### Add dependency
 
 ```yaml
 dependencies:
   drag_widgets:
 ```
 
-Import get in files that it will be used:
+### Add import package
+
 
 ```dart
 import 'package:drag_widgets/drag_widgets.dart';
 ```
 
-## Usage
-
+## Easy to use
+The package is designed with maximum adaptation to All screens.<br>
+Therefore, adding a widget to your screen will be very simple.
 ```dart
-DragWidget(
-    items: ListOfDummyData;
-);
+    Scaffold(
+      body: DragWidget(
+        items: [],
+        height: , // optional
+        width: , // optional
+      ),
+    )
 ```
+
+
+## Additional information
+The project is under development and ready for your pull-requests and issues 👍<br>
+Thank you for support ❤️
