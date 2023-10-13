@@ -1,6 +1,5 @@
 // ignore_for_file: must_be_immutable
 
-import 'package:drag_widgets/core/num_extensions.dart';
 import 'package:drag_widgets/core/size_widget.dart';
 import 'package:drag_widgets/widget/item.dart';
 import 'package:flutter/foundation.dart';
@@ -9,7 +8,9 @@ import 'package:flutter/material.dart';
 class SwipperWidget extends StatefulWidget {
   Widget child;
   dynamic adjustment;
-  SwipperWidget({Key? key, required this.child, this.adjustment})
+  double? width, height;
+  SwipperWidget(
+      {Key? key, required this.child, this.adjustment, this.height, this.width})
       : super(key: key);
 
   @override
@@ -19,14 +20,14 @@ class SwipperWidget extends StatefulWidget {
 class _SwipperWidgetState extends State<SwipperWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
-  double x = deviceHeight * 0.5.h, y = deviceHeight * 0.5.h;
+  double width = deviceWidth * 0.44, height = deviceHeight * 0.8;
 
   Offset? offsetItem;
   @override
   void initState() {
     controller = AnimationController(
-        duration: const Duration(milliseconds: 20), vsync: this);
-    offsetItem = Offset(x, y);
+        duration: const Duration(milliseconds: 5), vsync: this);
+    offsetItem = Offset(widget.width ?? width, widget.height ?? height);
     super.initState();
   }
 
@@ -34,7 +35,7 @@ class _SwipperWidgetState extends State<SwipperWidget>
   Widget build(BuildContext context) {
     if (kDebugMode) {
       print(
-        '$x,$y',
+        '$width,$height',
       );
     }
     return Positioned(

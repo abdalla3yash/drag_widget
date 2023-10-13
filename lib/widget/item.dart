@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class AnimatedItem extends AnimatedWidget {
-  static final sizeTween = Tween<double>(begin: 30.0, end: 30.0);
+  static final sizeTween = Tween<double>(begin: 50.0, end: 50.0);
 
   Widget child;
 
