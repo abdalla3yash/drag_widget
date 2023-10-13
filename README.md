@@ -9,7 +9,7 @@
 
 
 | Mobile | Web |
-| :------------: | :------------: | :------------: |
+| :------------: | :------------: |
 | ![Image](https://github.com/abdalla3yash/drag_widgets/blob/main/data/demo.gif?raw=true) | ![Image](https://github.com/abdalla3yash/drag_widgets/blob/main/data/screen-capture.gif?raw=true) | 
 
 <p align="center">
